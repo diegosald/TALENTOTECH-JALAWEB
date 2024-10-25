@@ -5,10 +5,7 @@
     color: white;
     /*outline: 1px solid darkblue;*/
     font-family: "Rock Salt", cursive;
-    
-
 }
-
 body{
     background:black;
 }
@@ -29,7 +26,9 @@ nav {
         align-items: center;
     }
 }
-
+.header-grad{
+    background-image: linear-gradient( rgb(82, 75, 75),black);
+}
 
 .btn-nav {
     text-decoration: none;
