@@ -98,13 +98,16 @@ nav {
     align-items: center;
     flex-direction: column;
   
-    input, label, textarea{
+    input, textarea{
        display:block;
        color:black;
        width: 60%;
        border-radius: 5px;
        border:0;
        padding: 0 0.5rem 0 0.5rem; ;
+    }
+    label{
+        color: white;
     }
     .btn-enviar{
         margin-top: 2rem;
