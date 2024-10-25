@@ -1,0 +1,220 @@
+* {
+    margin :0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /*outline: 1px solid darkblue;*/
+    font-family: "Rock Salt", cursive;
+    
+
+}
+
+body{
+    background:black;
+}
+/*NAV BAR*/
+nav { 
+   /* border: 1px solid red;*/
+    display:flex;
+    justify-content:start;
+    width: 100%;
+    padding: 1rem;
+    
+    .nav-links {
+        flex-grow: 1;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+
+.btn-nav {
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 128, 0, 0.815);
+}
+.btn-nav:hover {
+    
+    color:rgba(255, 0, 0, 0.767);
+    
+}
+.fuente-rock{
+    
+    font-weight: 800;
+    font-style: normal;
+    
+}
+.logo-nav {
+    width: 100px;
+    height: 100px;
+    background-image:url(../assets/img/jala.png) ;
+    background-position: center;
+    background-size:50%;
+    background-repeat: no-repeat;
+    
+    
+}
+/* FOTO  BANDA E INFO */
+.foto-banda {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 27.5rem;
+    background-image: url(../assets/img/fotobanda.jpeg);
+    background-color: rgba(0, 0, 0,0.3 );
+    background-blend-mode: overlay;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.info {
+    /*border: 1px solid red;*/
+    width: 50vw;
+    height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   /* background-color: black;*/
+}
+
+/* FORMULARIO DE CONTACTO */
+.contacto {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.contacto > form{ 
+    display: flex;
+    flex-direction: column;
+    gap:2 rem;
+    text-align: center;
+    justify-content: center;    
+    align-items: center;
+    flex-direction: column;
+  
+    input, label, textarea{
+       display:block;
+       color:black;
+       width: 60%;
+       border-radius: 5px;
+       border:0;
+       padding: 0 0.5rem 0 0.5rem; ;
+    }
+    .btn-enviar{
+        margin-top: 2rem;
+        background-color: rgba(0, 128, 0, 0.637);
+    }
+
+    .btn-enviar:hover{
+        background-color: rgba(255, 0, 0, 0.568);
+    }
+
+}
+
+/* SECCION PROXIMAS FECHAS */
+.prox-fechas{
+    margin: 2rem 2rem 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+article{
+    display:flex;
+    gap:2;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    align-items: center;
+    justify-content: space-around;
+    padding:0.5rem;
+   
+}
+
+article img{
+    width: 100px;
+    height: 120px;
+    display:inline-block;
+         
+}
+/* FOOTER */
+footer{
+    margin-top: 2rem;
+    background-image: linear-gradient(black, rgb(82, 75, 75));
+    display:flex ;  
+    flex-direction: column; 
+}
+footer p { 
+    text-align: center;
+    font-size: 0.7rem;
+ }
+
+.foot-nav{
+   display:flex;
+   justify-content: flex-end;
+}
+.foot-social{ 
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    a{ 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-decoration: none;
+    }
+}
+.icon{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px){
+    nav{
+        display:flex ;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        
+        
+        .nav-links {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+    }
+    article{
+        display:flex;
+        flex-direction: column;
+        gap:2;
+        align-items: center;
+        justify-content: center;
+        padding:0.5rem;
+       
+    }
+    
+    .info {
+        /*border: 1px solid red;*/
+        width: auto;
+        height: auto;
+    }
+    .foot-nav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+
+}
