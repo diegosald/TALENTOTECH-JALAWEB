@@ -63,7 +63,7 @@ nav {
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100vw;
+    width: 100%;
     height: 27.5rem;
     background-image: url(../assets/img/fotobanda.jpeg);
     background-color: rgba(0, 0, 0,0.3 );
@@ -84,8 +84,9 @@ nav {
 }
 
 /*CARDS*/
-.integrantes{
+.pre-cards{
     text-align: center;
+    margin-top: 20px;
 }
 .cards-container{
     
@@ -125,6 +126,33 @@ nav {
 
 .card-txt{
     text-align: center;
+}
+.fondo-card:hover{
+    box-shadow: 0px 0px 20px white;
+}
+
+/*HISTORIA*/
+.historia{
+   width: 100%;
+   text-align: center;
+   
+}
+.historia-cont{
+   margin-left: 5rem;
+   margin-right:5rem;
+   
+}
+.historia-txt{
+    float: right;
+    text-align: justify;
+}
+.historia-img{
+    display: block;
+    float: left;
+    width: 300px ;
+    margin-right: 1rem;
+    
+
 }
 
 /* FORMULARIO DE CONTACTO */
