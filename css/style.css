@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:ital,wght@0,100..900;1,100..900&family=Rock+Salt&display=swap');
+
 * {
-    margin :0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: white;
-   /* outline: 1px solid darkblue; */
+  /*   outline: 1px solid darkblue; */
     font-family: "Rock Salt", cursive;
 }
-body{
-    background:black;
+
+body {
+    background: black;
 }
+
 /*NAV BAR*/
-nav { 
-   /* border: 1px solid red;*/
-    display:flex;
-    justify-content:start;
+nav {
+    /* border: 1px solid red;*/
+    display: flex;
+    justify-content: start;
     gap: 1rem;
     width: 100%;
     padding: 1rem;
-    
+
     .nav-links {
         flex-grow: 1;
         list-style: none;
@@ -28,35 +31,40 @@ nav {
         align-items: center;
     }
 }
-.header-grad{
-    background-image: linear-gradient( rgb(82, 75, 75),black);
+
+.header-grad {
+    background-image: linear-gradient(rgb(82, 75, 75), black);
 }
 
 .btn-nav {
     text-decoration: none;
     text-shadow: 2px 2px 2px rgba(0, 128, 0, 0.815);
 }
+
 .btn-nav:hover {
-    
-    color:rgba(255, 0, 0, 0.767);
-    
+
+    color: rgba(255, 0, 0, 0.767);
+
 }
-.fuente-rock{
-    
+
+.fuente-rock {
+
     font-weight: 800;
     font-style: normal;
-    
+
 }
+
 .logo-nav {
     width: 100px;
     height: 100px;
-    background-image:url(../assets/img/logo2.png) ;
+    background-image: url(../assets/img/logo2.png);
     background-position: center;
-    background-size:90%;
+    background-size: 90%;
     background-repeat: no-repeat;
-    
-    
+
+
 }
+
 /* FOTO  BANDA E INFO */
 .foto-banda {
     position: absolute;
@@ -66,10 +74,10 @@ nav {
     width: 100%;
     height: 27.5rem;
     background-image: url(../assets/img/fotobanda.jpeg);
-    background-color: rgba(0, 0, 0,0.3 );
+    background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: overlay;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -80,16 +88,19 @@ nav {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-   /* background-color: black;*/
+    /* background-color: black;*/
 }
 
 /*CARDS*/
-.pre-cards{
+.pre-cards {
     text-align: center;
     margin-top: 20px;
+    border: 1px solid white;
+
 }
-.cards-container{
-    
+
+.cards-container {
+
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -97,62 +108,102 @@ nav {
     row-gap: 1rem;
     padding: 1rem;
 }
-.card{
-    width:230px ;
+
+.card {
+    width: 230px;
     display: flex;
-    border:2px solid white;
+    border: 2px solid white;
     border-radius: 25px;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    
-    
+
+
 }
-.card-img{
-    
-    width:200px;
-    
+
+.card-img {
+
+    width: 200px;
+
     object-fit: contain;
-    img{
+
+    img {
         display: inline-block;
         width: 100%;
         height: 100%;
         border-radius: 25px;
-        
+
     }
 }
 
-.card-txt{
+.card-txt {
     text-align: center;
 }
-.fondo-card:hover{
+
+.fondo-card:hover {
     box-shadow: 0px 0px 20px white;
 }
 
-/*HISTORIA*/
-.historia{
-   width: 100%;
-   text-align: center;
-   
-}
-.historia-cont{
-   margin-left: 5rem;
-   margin-right:5rem;
-   
-}
-.historia-txt{
-    float: right;
-    text-align: justify;
-}
-.historia-img{
-    display: block;
-    float: left;
-    width: 300px ;
-    margin-right: 1rem;
-    
 
+
+/*GRID GALERIA*/
+.galeria-main {
+    width: 100vh;
+}
+
+.titulo-galeria {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin: 2rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+}
+
+/*HISTORIA*/
+.historia {
+    width: 100%;
+    padding-top: 2rem;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    }
+
+
+
+.historia-cont {
+    
+    border: 1px solid white;
+    margin: 1rem 5rem 1rem 5rem;
+        
+    p {
+       border: 1px solid green;
+       justify-content: center;         
+    }
+
+    .historia-img {
+        width: 300px;
+        border: 1px solid blue;
+        float:left;
+       
+
+
+    }
 }
 
 /* FORMULARIO DE CONTACTO */
@@ -162,88 +213,106 @@ nav {
     flex-direction: column;
     text-align: center;
 }
-.contacto > form{ 
-    
+
+.contacto>form {
+
     display: flex;
     flex-direction: column;
-    gap:2 rem;
+    gap: 2 rem;
     text-align: center;
-    justify-content: center;    
+    justify-content: center;
     align-items: center;
     flex-direction: column;
-  
-    input, textarea{
-       display:block;
-       color:black;
-       width: 60%;
-       border-radius: 5px;
-       border:0;
-       padding: 0 0.5rem 0 0.5rem; ;
+
+    input,
+    textarea {
+        display: block;
+        color: black;
+        width: 60%;
+        border-radius: 5px;
+        border: 0;
+        padding: 0 0.5rem 0 0.5rem;
+        ;
     }
-    label{
+
+    label {
         color: white;
     }
-    .btn-enviar{
+
+    .btn-enviar {
         margin-top: 2rem;
         background-color: rgba(0, 128, 0, 0.637);
     }
 
-    .btn-enviar:hover{
+    .btn-enviar:hover {
         background-color: rgba(255, 0, 0, 0.568);
     }
 
 }
 
 /* SECCION PROXIMAS FECHAS */
-.prox-fechas{
-   
+.prox-fechas {
+
     margin: 2rem 2rem 0 2rem;
     text-align: center;
     display: flex;
     flex-direction: column;
-     
-    article{
-        display:flex;
-        gap:2;
+
+    article {
+        display: flex;
+        flex-wrap: wrap;
         border-top: 1px solid white;
         border-bottom: 1px solid white;
         align-items: center;
         justify-content: space-around;
-        padding:0.5rem;
-       
-    }
-    
-    article img{
-        width: 100px;
-        height: 120px;
-        display:inline-block;
-             
+        padding: 0.5rem;
+        
     }
 
+    article img {
+        display:block;
+        width: 100px;
+        height: 120px;
+        transition: 1s linear;  
+        
+    }
+    
+    article img:active  {
+        
+        width: 25%;
+        height: 25%;
+        
+         
+    }
+
+    
 }
 
 /* FOOTER */
-footer{
+footer {
     margin-top: 2rem;
     background-image: linear-gradient(black, rgb(82, 75, 75));
-    display:flex ;  
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
 }
-footer p { 
+
+footer p {
     text-align: center;
     font-size: 0.7rem;
- }
-
-.foot-nav{
-   display:flex;
-   justify-content: flex-end;
 }
-.foot-social{ 
+
+.foot-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.foot-social {
     width: 50%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    a{ 
+
+    a {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -251,22 +320,23 @@ footer p {
         text-decoration: none;
     }
 }
-.icon{
+
+.icon {
     display: inline-block;
     width: 30px;
     height: 30px;
-    
+
 }
 
 /* RESPONSIVE */
-@media (max-width: 600px){
-    nav{
-        display:flex ;
+@media (max-width: 768px) {
+    nav {
+        display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        
-        
+
+
         .nav-links {
             text-align: center;
             display: flex;
@@ -276,26 +346,46 @@ footer p {
             gap: 1rem;
         }
     }
-  
-    article{
-        display:flex;
+
+    article {
+        display: flex;
         flex-direction: column;
-        gap:2;
+        gap: 1rem;
         align-items: center;
         justify-content: center;
-        padding:0.5rem;
-       
+        padding: 0.5rem;
+
     }
+    
+    .historia-cont{
+        border: 1px solid white;
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+        align-items: center;
+
+    }
+
+    .historia-img {
+        border: 1px solid blue;
+        width: 300px;
+
+
+
+
+    }
+
     
     .info {
         /*border: 1px solid red;*/
         width: auto;
         height: auto;
     }
-    .foot-nav{
+
+    .foot-nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-     }
+    }
 
 }
