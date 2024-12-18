@@ -105,7 +105,7 @@ function listarCarrito(){
         else {
        let tablacarrito = document.createElement("table")
         let total = document.createElement("h3")
-        let vaciarCarrito = document.createElement("button")
+        let vCarrito = document.createElement("button")
         let totalCarrito = 0
        //
         tablacarrito.innerHTML += '<tr><td>Producto</td><td>Precio</td><td>Cantidad</td></tr>'
@@ -138,7 +138,7 @@ function listarCarrito(){
            tdn.appendChild(sumar)
            tdn.appendChild(restar) 
            trn.appendChild(tdn)
-           tdn.appendChild(eliminar)
+           
            tablacarrito.appendChild(trn) 
           
             totalCarrito += carrito[i].producto.Precio * carrito[i].cantidad
@@ -147,15 +147,15 @@ function listarCarrito(){
         
         total.innerHTML = "Total: $" + totalCarrito
         
-        vaciarCarrito.innerHTML = "Vaciar Carrito"
-        vaciarCarrito.addEventListener('click', () => {
+        vCarrito.innerHTML = "Vaciar Carrito"
+        vCarrito.addEventListener('click', () => {
           vaciarCarrito()
         })
         
-        vaciarCarrito.classList.add("boton-eliminar")
+        vCarrito.classList.add("boton-eliminar")
         document.getElementById("carrito-items").appendChild(tablacarrito)
         document.getElementById("carrito-items").appendChild(total)
-        document.getElementById("carrito-items").appendChild(vaciarCarrito)
+        document.getElementById("carrito-items").appendChild(vCarrito)
       }
           
 }
