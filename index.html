@@ -98,7 +98,7 @@
 
         <section id="contacto" class="contacto">
             <h1>Contactanos</h1>
-            <form action="https://formspree.io/f/movqjpeo" method="post">
+            <form id="form-contacto" action="https://formspree.io/f/movqjpeo" method="post">
                 <label for="txtNombre">Nombre y Apellido</label>
                 <input type="text" name="txtNombre" id="txtNombre">
                 <label for="txtEmail">Email</label>
@@ -107,6 +107,7 @@
                 <textarea name="txtAsunto" id="txtAsunto" placeholder="DEJANOS TU MENSAJE"></textarea>
 
                 <input class="btn-enviar" type="submit">
+                <p id="my-form-status"></p>
             </form>
         </section>
         <section id="prox-fechas" class="prox-fechas">
